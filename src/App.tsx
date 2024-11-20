@@ -1,12 +1,22 @@
-import HeroSection from "./components/HeroSection";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Main from "./pages/Main";
+import Contact from "./pages/Contact";
+
+const routes = createBrowserRouter([
+  {
+    path: "/",
+    element: <Main />,
+  },
+  {
+    path: "/contact",
+    element: <Contact />,
+  },
+]);
+
 function App() {
   return (
     <>
-      <Header />
-      <HeroSection />
-      <Footer />
+      <RouterProvider router={routes} />
     </>
   );
 }

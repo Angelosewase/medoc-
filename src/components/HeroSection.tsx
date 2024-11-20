@@ -2,16 +2,16 @@ import { ArrowRightIcon, MapPinIcon } from '@heroicons/react/20/solid'
 
 function HeroSection() {
   return (
-    <section className="bg-gradient-to-r from-blue-100 to-blue-200 pt-40 md:pt-16 py-16">
+    <section className="bg-gradient-to-r from-blue-100 to-blue-200 pt-40 md:pt-16 py-16 md:px-14 px-4" >
       <div className="container mx-auto px-6">
+        {/* Main content grid remains similar */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           <div className="space-y-6">
-            <h1 className="text-4xl md:text-5xl font-bold text-slate-800">
-              Your Partner in Health and Wellness
+            <h1 className="text-4xl md:text-5xl font-bold text-slate-800  decoration-4 decoration-blue-500">
+            Streamlining Healthcare, Empowering Patients
             </h1>
             <p className="text-lg text-slate-700">
-              We are committed to providing you with the best medical and healthcare services 
-              to help you live healthier and happier.
+            "Seamless healthcare management and patient interaction, empowering providers to manage data and patients to access care remotely, anytime, anywhere."
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <button className="bg-blue-600 text-white px-8 py-3 rounded-full hover:bg-blue-700 flex items-center gap-2">
@@ -25,13 +25,55 @@ function HeroSection() {
             </div>
           </div>
 
-          {/* Right Image */}
-          <div className="hidden md:block ">
+          <div className="hidden md:block">
             <img 
               src="/hero-image.png" 
               alt="Healthcare Professionals" 
-              className="w-full h-auto object-cover rounded-lg  mt-10"
+              className="w-[90%] h-auto object-cover mt-10"
             />
+          </div>
+        </div>
+
+        {/* New Booking Section */}
+        <div className="mt-16 bg-white rounded-lg shadow-lg p-6 absolute -bottom-0 hidden md:block ">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-6 items-center">
+            <div className="flex items-center gap-3">
+              <div className="p-2 bg-blue-100 rounded-lg">
+                <svg className="h-6 w-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                </svg>
+              </div>
+              <div>
+                <div className="text-sm text-gray-600">Date</div>
+                <div className="font-semibold">August 15, 2024</div>
+              </div>
+            </div>
+
+            <div className="flex items-center gap-3">
+              <div className="p-2 bg-blue-100 rounded-lg">
+                <svg className="h-6 w-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                </svg>
+              </div>
+              <div>
+                <div className="text-sm text-gray-600">Specialization</div>
+                <div className="font-semibold">Family Care</div>
+              </div>
+            </div>
+
+            <div className="flex items-center gap-3">
+              <div className="p-2 bg-blue-100 rounded-lg">
+                <MapPinIcon className="h-6 w-6 text-blue-600" />
+              </div>
+              <div>
+                <div className="text-sm text-gray-600">Location</div>
+                <div className="font-semibold">Colorado, US</div>
+              </div>
+            </div>
+
+            <button className="w-full bg-primary text-white px-6 py-3 rounded-lg hover:bg-blue-800">
+              Book Now
+            </button>
           </div>
         </div>
       </div>

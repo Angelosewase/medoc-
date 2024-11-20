@@ -2,7 +2,7 @@ import { EnvelopeIcon, MapPinIcon, PhoneIcon } from '@heroicons/react/24/outline
 
 function Header() {
   return (
-    <header className='fixed top-0 z-50 w-full backdrop-blur-md'>
+    <header className='fixed top-0 z-50 w-full  backdrop-blur-lg'>
       {/* Top bar */}
       <div className="bg-primary/90 text-white px-4 py-2">
         <div className="container mx-auto flex justify-between items-center text-sm">
@@ -25,7 +25,7 @@ function Header() {
       </div>
 
       {/* Main navigation */}
-      <div className="bg-white/40 container mx-auto py-4 px-4 mt-2 rounded-lg">
+      <div className="bg-white/50 container mx-auto py-2 px-4 mt-2 rounded-lg w-[90%] ">
         <div className="flex justify-between items-center">
           <div className="flex items-center gap-2">
             <img 
@@ -40,9 +40,10 @@ function Header() {
           <nav className="hidden md:flex items-center space-x-8">
             <a href="/" className="hover:text-primary">Home</a>
             <a href="#about" className="hover:text-primary">About</a>
-            <a href="#health-checkup" className="hover:text-primary">Health Checkup</a>
-            <a href="#doctors" className="hover:text-primary">Doctors</a>
-            <a href="#departments" className="hover:text-primary">Departments</a>
+            <a href="#services" className="hover:text-primary">Services </a>
+            <a href="#whyUs" className="hover:text-primary">why us </a>
+            <a href="#plans" className="hover:text-primary">plans </a>
+            <a href="/contact" className="hover:text-primary">Contact us</a>
           </nav>
 
           <div className="flex items-center gap-4">
