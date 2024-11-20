@@ -1,13 +1,14 @@
-
+import HeroSection from "./components/HeroSection";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 function App() {
   return (
     <>
-     <div>
-      <p className='text-3xl font-bold'>Hello World</p>
-     </div>
-        
+      <Header />
+      <HeroSection />
+      <Footer />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
