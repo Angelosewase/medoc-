@@ -31,7 +31,7 @@ function AboutUs() {
               <ArrowRightIcon className="w-40 text-primary" />
               <div>
                 <h4 className="font-semibold text-xl">
-                  Welcome to medoc , a dedicated health care provider
+                  Welcome to medoc , a dedicated health partner
                 </h4>
                 <p className="">
                 At Medico, we believe in providing more than just healthcare—we&apos;re here to create a compassionate, supportive environment where patients feel valued and understood. Our platform connects healthcare providers with patients, offering secure data management, remote consultations, and easy access to health information. We are dedicated to delivering high-quality care and ensuring every patient receives the attention they deserve.

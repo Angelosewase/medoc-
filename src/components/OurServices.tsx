@@ -1,31 +1,39 @@
+import { 
+  DocumentChartBarIcon, 
+  VideoCameraIcon, 
+  CalendarIcon, 
+  UserCircleIcon, 
+  UserGroupIcon 
+} from '@heroicons/react/24/outline';
+
 const OurServices = () => {
   const services = [
     {
-      icon: "🧠",
+      icon: <DocumentChartBarIcon className="w-12 h-12 text-blue-500" />,
       title: "Healthcare Data Management",
       description:
       "We provide secure, centralized storage for patient data, ensuring healthcare providers have easy access to accurate records. This streamlines operations and helps maintain consistency in patient care.",
     },
     {
-      icon: "👁️",
+      icon: <VideoCameraIcon className="w-12 h-12 text-blue-500" />,
       title: "Remote Consultations",
       description:
         "Our platform supports virtual consultations, allowing patients to connect with their healthcare providers remotely. This ensures convenient, accessible care, especially for those in remote areas.",
     },
     {
-      icon: "💉",
+      icon: <CalendarIcon className="w-12 h-12 text-blue-500" />,
       title: "Appointment Scheduling & Reminders",
       description:
         "Patients can easily schedule, reschedule, or cancel appointments through our intuitive platform. Automatic reminders ensure that appointments run smoothly and on time.",
     },
     {
-      icon: "❤️",
+      icon: <UserCircleIcon className="w-12 h-12 text-blue-500" />,
       title: "Patient Access & Control",
       description:
         "Medico gives patients direct access to their health records, empowering them to manage their own care. This enhances patient engagement and ensures they stay informed about their health journey.",
     },
     {
-      icon: "❤️",
+      icon: <UserGroupIcon className="w-12 h-12 text-blue-500" />,
       title: "Healthcare Provider Collaboration",
       description:
         "Our system enables healthcare providers to share patient data securely, improving communication and collaboration. This ensures more coordinated care and better health outcomes for patients.",
