@@ -8,8 +8,9 @@ function Footer() {
           <div>
             <h2 className="text-2xl font-bold mb-4">Medoc</h2>
             <p className="mb-4">
-              Lorem ipsum dolor sit amet consectetur. Consequat fermentum
-              viverra auctor nibh eleifend sed lorem.
+              Seamless healthcare management and patient interaction, empowering
+              providers to manage data and patients to access care remotely,
+              anytime, anywhere.
             </p>
             <div className="flex gap-4">
               <a
